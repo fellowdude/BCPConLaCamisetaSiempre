@@ -1,0 +1,9 @@
+.gap-3e {
+  gap: 3em;
+}
+
+@media screen and (min-width: 1480px) {
+  .gap-3e {
+    gap: 4em;
+  }
+}

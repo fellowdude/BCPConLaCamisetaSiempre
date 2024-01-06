@@ -1,0 +1,17 @@
+.btnClose {
+  right: 0px;
+  top: -55px;
+  width: 30px;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+}
+
+@media screen and (min-width: 1480px) {
+  .btnClose {
+    right: -55px;
+    top: 0;
+    width: auto;
+  }
+}

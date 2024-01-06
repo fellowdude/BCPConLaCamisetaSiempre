@@ -1,0 +1,20 @@
+#play {
+  width: 75px;
+}
+
+#banner{
+  transition: all ease 2.5s;
+}
+
+#title {
+  font-size: 2.8em;
+}
+
+@media screen and (min-width: 1480px) {
+  #title {
+    font-size: 4em;
+  }
+  #play {
+    width: 115px;
+  }
+}

@@ -1,0 +1,17 @@
+.message{
+  text-align: center;
+}
+
+.warning{
+  width: 100px;
+}
+
+@media screen and (min-width: 1480px) {
+  .message {
+    text-align: left;
+  }
+
+  .warning {
+    width: 100%;
+  }
+}

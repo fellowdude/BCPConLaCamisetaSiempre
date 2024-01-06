@@ -1,0 +1,367 @@
+<div class="container">
+  <div class="d-none d-xl-flex row w-100 my-5 justify-content-center align-items-center">
+    <div class="col-1 justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center cursor-pointer" (click)="changeSection(1)">
+        <img src="assets/images/confront_icons/main_1.png" *ngIf="currentSection === 1">
+        <img src="assets/images/confront_icons/sec_1.png" *ngIf="currentSection !== 1">
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="vr connector"></div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center cursor-pointer" (click)="changeSection(2)">
+        <img src="assets/images/confront_icons/main_2.png" *ngIf="currentSection === 2">
+        <img src="assets/images/confront_icons/sec_2.png" *ngIf="currentSection !== 2">
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="vr connector"></div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center cursor-pointer" (click)="changeSection(3)">
+        <img src="assets/images/confront_icons/main_3.png" *ngIf="currentSection === 3">
+        <img src="assets/images/confront_icons/sec_3.png" *ngIf="currentSection !== 3">
+      </div>
+    </div>
+    <div class="col">
+      <div class="row" *ngIf="currentSection === 1">
+        <div class="col-3 text-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu vivienda</h1>
+        </div>
+        <div class="col">
+          <img class="img-fluid w-100" src="assets/images/confront_1.png">
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-around">
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_water.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Haz un mantenimiento constante a los sistemas de drenaje y captación de agua.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_paper.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Mantén limpios y en buen estado los canales de drenaje de tus techos y patios.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_light.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Aleja los aparatos eléctricos de las ventanas y desconéctalos cuando no los uses.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_floor.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Repara las rajaduras, frietas y filtraciones de tu casa.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_backpack.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Ten lista tu mochila de emergencia para que puedas evacuar rápidamente. <br/><a class="text-info" [routerLink]="['/mochila-de-emergencia']">Aprende a preparar tu mochila de emergencia</a></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="currentSection === 2">
+        <div class="col-3 text-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu negocio</h1>
+        </div>
+        <div class="col">
+          <img class="img-fluid w-100" src="assets/images/confront_2.png">
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-around">
+          <div class="row my-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_light.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Verifica que las conexiones eléctricas estén en buen estado.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_floor.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Repara las rajaduras, grietas, y filtraciones de tu negocio.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_hand.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Mantén secos los lugares donde guardes productos peligrosos.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_paper.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Haz mantenimiento constante a los sistemas de drenaje y captación de agua.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="currentSection === 3">
+        <div class="col-3 text-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu economía / finanzas</h1>
+        </div>
+        <div class="col">
+          <img class="img-fluid w-100" src="assets/images/confront_3.png">
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-around">
+          <div class="row my-5">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_pig.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Ten un fondo de emergencia, para cubrir gastos familiares, del negocio o posibles daños durante el desastre.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_shield.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Adquiere un seguro para proteger tu negocio y/o tu hogar.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_hand.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Genera ingresos complementarios, sobre todo si tu negocio es vulneragle frente al Fenómeno El Niño.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex d-xl-none row w-100 my-5 justify-content-center align-items-center">
+    <div class="col-12">
+      <div class="row flex-column flex-xl-row">
+        <div class="col-12 text-center col-xl-3 text-xl-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu vivienda</h1>
+        </div>
+        <div class="col my-2 my-xl-0">
+          <img class="img-fluid w-100" src="assets/images/confront_1.png">
+        </div>
+        <div class="col-12 col-xl-3 my-2 my-xl-0 d-flex flex-column justify-content-around">
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_water.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Haz un mantenimiento constante a los sistemas de drenaje y captación de agua.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_paper.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Mantén limpios y en buen estado los canales de drenaje de tus techos y patios.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_light.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Aleja los aparatos eléctricos de las ventanas y desconéctalos cuando no los uses.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_floor.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Repara las rajaduras, frietas y filtraciones de tu casa.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_1_backpack.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Ten lista tu mochila de emergencia para que puedas evacuar rápidamente. <br/><a class="text-info" [routerLink]="['/mochila-de-emergencia']">Aprende a preparar tu mochila de emergencia</a></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-column flex-xl-row">
+        <div class="col-12 text-center col-xl-3 text-xl-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu negocio</h1>
+        </div>
+        <div class="col my-2 my-xl-0">
+          <img class="img-fluid w-100" src="assets/images/confront_2.png">
+        </div>
+        <div class="col-12 col-xl-3 my-2 my-xl-0 d-flex flex-column justify-content-around">
+          <div class="row my-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_light.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Verifica que las conexiones eléctricas estén en buen estado.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_floor.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Repara las rajaduras, grietas, y filtraciones de tu negocio.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_hand.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Mantén secos los lugares donde guardes productos peligrosos.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div>
+              <img src="assets/images/confront_icons/confront_2_paper.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Haz mantenimiento constante a los sistemas de drenaje y captación de agua.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-column flex-xl-row">
+        <div class="col-12 text-center col-xl-3 text-xl-end">
+          <h3 class="my-0 fs-3">Cómo preparar</h3>
+          <h1 class="my-0 fs-1">tu economía / finanzas</h1>
+        </div>
+        <div class="col my-2 my-xl-0">
+          <img class="img-fluid w-100" src="assets/images/confront_3.png">
+        </div>
+        <div class="col-12 col-xl-3 my-2 my-xl-0 d-flex flex-column justify-content-around">
+          <div class="row my-5">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_pig.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Ten un fondo de emergencia, para cubrir gastos familiares, del negocio o posibles daños durante el desastre.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_shield.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Adquiere un seguro para proteger tu negocio y/o tu hogar.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <img src="assets/images/confront_icons/confront_3_hand.png">
+            </div>
+            <hr class="opacity-100 w-100 mx-2 my-2 border-secondary"/>
+            <div>
+              <p class="fs-6">
+                <strong>Genera ingresos complementarios, sobre todo si tu negocio es vulneragle frente al Fenómeno El Niño.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row w-100 mb-5 justify-content-center align-items-center text-center">
+    <h4><strong>Aprende más con 5to Piso</strong></h4>
+    <a [routerLink]="['/aprende-mas']" class="position-relative w-100">
+      <img class="img-fluid" src="assets/images/5th_floot_thmb.png">
+      <img class="img-fluid position-absolute top-50 start-50 translate-middle" width="100" src="assets/images/play.svg">
+    </a>
+  </div>
+</div>

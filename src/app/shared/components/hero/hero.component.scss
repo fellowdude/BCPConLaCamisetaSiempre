@@ -1,0 +1,77 @@
+.banner{
+  background: none no-repeat;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  &.shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%);
+  }
+
+  &.confront {
+    background: url('../../../../assets/images/banner_confront.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.learn-more{
+    background: url('../../../../assets/images/banner_learn_more.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.afected-zones{
+    background: url('../../../../assets/images/banner_zones.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.emergency-backpack{
+    background: url('../../../../assets/images/banner_emergency_backpack_m.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.emergency-cases{
+    background: url('../../../../assets/images/banner_emergency_cases_m.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+#title {
+  font-size: 2.5em;
+}
+
+#subtitle {
+  font-size: 1.8em;
+}
+
+@media screen and (min-width: 1480px) {
+  #title {
+    font-size: 4em;
+  }
+
+  #subtitle {
+    font-size: 3em;
+  }
+
+  .banner {
+    height: 1100px;
+    &.emergency-backpack{
+      background: url('../../../../assets/images/banner_emergency_backpack.png') no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &.emergency-cases{
+      background: url('../../../../assets/images/banner_emergency_cases.png') no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

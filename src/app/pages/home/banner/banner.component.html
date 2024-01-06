@@ -1,0 +1,27 @@
+<section id="banner" class="w-100 d-flex position-relative" [ngClass]="bannerType">
+  <div class="d-flex justify-content-center align-items-end container z-1 mb-5">
+    <div class="d-flex gap-3 flex-column">
+      <div class="text-white text-center">
+        <h1 id="title" class="position-relative py-1">
+          <strong>
+            CON <span class="text-primary">LA CAMISETA</span> SIEMPRE <br>
+            PUESTA POR EL PERÚ
+          </strong>
+        </h1>
+        <p class="my-0 py-3 py-xl-1 fs-6 fs-xl-5">
+          Cuando llevamos la camiseta de Perú puesta llevamos nuestra fe,<br class="d-none d-xl-flex"> confianza y fortaleza a cada terreno.
+        </p>
+        <p class="my-0 py-0 fs-6 fs-xl-5">
+          Por eso, te invitamos hoy a ponerte la camiseta porque solo unidos le<br class="d-none d-xl-flex"> ganaremos el partido al Fenómeno El Niño.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mb-5">
+        <img id="play" src="assets/images/play.png" class="align-stretch py-4 cursor-pointer" (click)="openModal()">
+      </div>
+    </div>
+  </div>
+  <a class="d-flex justify-content-center align-items-center flex-column position-absolute bottom-0 start-50 translate-middle-x p-3 text-decoration-none cursor-pointer" href="#afrontar">
+    <span class="text-white fs-5 d-none d-xl-flex">Ver más</span>
+    <i class='bx bx-chevron-down fs-2 fs-xl-1 text-white'></i>
+  </a>
+</section>

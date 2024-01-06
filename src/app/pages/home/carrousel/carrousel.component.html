@@ -1,0 +1,18 @@
+<section id="protegerte" class="py-5" style="background-color: #f0f0f0;">
+  <div class="container">
+    <h1 class="text-center text-dark"><b>APRENDE CÓMO PONERTE LA CAMISETA Y PROTEGERTE:</b></h1>
+    <div class="d-flex w-100 mx-auto justify-content-center align-items-center my-4">
+      <div class="d-flex justify-content-center aling-items-center col-1">
+        <img src="assets/images/next_left.png" class="img-fluid cursor-pointer" (click)="nextVideo()">
+      </div>
+      <div id="carrousel" class="col-10 d-flex gap-3 mx-auto justify-content-center align-items-center position-relative py-5 z-2">
+        <iframe [src]="highlighted[0]" frameborder="0" allow="modestbranding=1;rel=0;controls=0;showinfo=0;fs=0;" allowfullscreen class="video-frame video-small rounded-3 custom-shadow col-xl-4 overflow-hidden d-none d-xl-inline"></iframe>
+        <iframe [src]="highlighted[1]" frameborder="0" allow="modestbranding=1;rel=0;controls=0;showinfo=0;fs=0;" allowfullscreen class="video-frame rounded-3 custom-shadow col-11 col-xl-4 overflow-hidden"></iframe>
+        <iframe [src]="highlighted[2]" frameborder="0" allow="modestbranding=1;rel=0;controls=0;showinfo=0;fs=0;" allowfullscreen class="video-frame video-small rounded-3 custom-shadow col-xl-4 overflow-hidden d-none d-xl-inline"></iframe>
+      </div>
+      <div class="d-flex justify-content-center aling-items-center col-1">
+        <img src="assets/images/next_right.png" class="img-fluid cursor-pointer" (click)="prevVideo()">
+      </div>
+    </div>
+  </div>
+</section>

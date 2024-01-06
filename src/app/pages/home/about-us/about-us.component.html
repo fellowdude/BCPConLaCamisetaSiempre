@@ -1,0 +1,128 @@
+<section id="nosotros" class="container mt-5 py-5">
+  <h1 class="text-center text-dark"><b>¿CÓMO NOS SUMAMOS NOSOTROS?</b></h1>
+  <div class="d-flex flex-column flex-xl-row gap-4 py-5 align-items-center">
+    <div class="col-1 d-none d-xl-flex justify-content-center">
+      <img src="assets/images/next_left.png" class="img-fluid cursor-pointer" (click)="prevProject()">
+    </div>
+    <div class="d-flex border rounded-4 p-3 p-xl-3 col-xl-5 col-11 mx-auto information gap-3 justify-content-center align-items-start text-decoration-none flex-column flex-grow-1">
+      <div class="row">
+        <img class="w-100 main-img" [src]="projectsList[0].image">
+      </div>
+      <div class="row">
+        <p class="fs-5 my-1">
+          <strong>{{projectsList[0].title}}</strong>
+        </p>
+        <p class="fs-6 my-1 detail">
+          {{projectsList[0].detail}}
+        </p>
+      </div>
+      <div class="row w-100 align-items-center">
+        <div class="d-flex gap-3" [ngClass]="{'col-4': projectsList[0].buttonLabel, 'col-12': !projectsList[0].buttonLabel,}">
+          <ng-container *ngFor="let logo of projectsList[0].logos">
+            <img class="img-fluid d-block object-fit-contain" [src]="logo" style="max-width: 70px; min-height: 36px;" >
+          </ng-container>
+        </div>
+        <div class="col-xl-6 col-8" *ngIf="projectsList[0].buttonLabel">
+          <a [href]="projectsList[0].buttonLink" target="_blank" class="d-block btn btn-dark w-100 rounded-pill">
+            {{projectsList[0].buttonLabel}}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-xl-flex border rounded-4 p-3 p-xl-3 col-xl-5 col-10 mx-auto information gap-3 justify-content-center align-items-start text-decoration-none flex-column flex-grow-1">
+      <div class="row">
+        <img class="w-100 main-img" [src]="projectsList[1].image">
+      </div>
+      <div class="row">
+        <p class="fs-5 my-1">
+          <strong>{{projectsList[1].title}}</strong>
+        </p>
+        <p class="fs-6 my-1 detail" >
+          {{projectsList[1].detail}}
+        </p>
+      </div>
+      <div class="row w-100 align-items-center">
+        <div class="d-flex gap-3" [ngClass]="{'col-4': projectsList[1].buttonLabel, 'col-12': !projectsList[1].buttonLabel,}">
+          <ng-container *ngFor="let logo of projectsList[1].logos">
+            <img class="img-fluid d-block object-fit-contain" [src]="logo" style="max-width: 70px; min-height: 36px;" >
+          </ng-container>
+        </div>
+        <div class="col-xl-6 col-12" *ngIf="projectsList[1].buttonLabel">
+          <a [href]="projectsList[1].buttonLink" target="_blank" class="d-block btn btn-dark w-100 rounded-pill">
+            {{projectsList[1].buttonLabel}}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-1 col-10 d-flex justify-content-xl-center justify-content-around">
+      <img src="assets/images/next_left.png" class="d-block d-xl-none img-fluid cursor-pointer" (click)="prevProject()">
+      <img src="assets/images/next_right.png" class="img-fluid cursor-pointer" (click)="nextProject()">
+    </div>
+    <!-- <a [routerLink]="['/capacitaciones']"
+      class="d-flex border rounded-4 p-3 p-xl-5 col-xl-4 col-11 mx-auto information gap-3 justify-content-center align-items-start text-decoration-none flex-column">
+      <div class="d-flex gap-3 w-100 justify-content-start align-items-center">
+        <div class="image-icon col-4 col-xl-3">
+          <img src="assets/images/teach_r.png" class="base w-100">
+          <img src="assets/images/teach_w.png" class="hover w-100">
+        </div>
+        <div class="d-flex flex-column justify-content-start align-items-center">
+          <p class="fs-4 my-0"> <b>Capacitaciones</b> </p>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-10">
+          <a class="d-flex text-decoration-none fs-6 fs-xl-5 image-icon align-items-center">
+            <b>VER MÁS</b>
+            <img src="assets/images/arrow_g.png" class="base ps-2">
+            <img src="assets/images/arrow_w.png" class="hover ps-2">
+          </a>
+        </div>
+      </div>
+    </a>
+    <a
+      class="d-flex border rounded-4 p-3 p-xl-5 col-xl-4 col-11 mx-auto gap-3 information justify-content-center align-items-start text-decoration-none flex-column">
+      <div class="d-flex gap-3 w-100 justify-content-start align-items-center">
+        <div class="image-icon col-4 col-xl-3">
+          <img src="assets/images/pig_r.png" class="base w-100">
+          <img src="assets/images/pig_w.png" class="hover w-100">
+        </div>
+        <div class="d-flex flex-column justify-content-start align-items-center">
+          <p class="fs-4 my-0"> <b>Productos y<br>Ayudas Financieras</b> </p>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-10">
+          <a class="d-flex text-decoration-none fs-6 fs-xl-5 image-icon align-items-center">
+            <b>PRÓXIMAMENTE</b>
+            <img src="assets/images/arrow_g.png" class="base ps-2 d-none">
+            <img src="assets/images/arrow_w.png" class="hover ps-2 d-none">
+          </a>
+        </div>
+      </div>
+    </a>
+    <a
+      class="d-none border rounded-4 p-3 p-xl-5 col-xl-4 col-11 mx-auto gap-3 information justify-content-center align-items-start text-decoration-none flex-column">
+      <div class="d-flex gap-3 w-100 justify-content-start align-items-center">
+        <div class="image-icon col-4 col-xl-3">
+          <img src="assets/images/donation_r.png" class="base w-100">
+          <img src="assets/images/donation_w.png" class="hover w-100">
+        </div>
+        <div class="d-flex flex-column justify-content-start align-items-center">
+          <p class="fs-4 my-0"> <b>Donaciones</b> </p>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-10">
+          <a class="d-flex text-decoration-none fs-6 fs-xl-5 image-icon align-items-center">
+            <b>PRÓXIMAMENTE</b>
+            <img src="assets/images/arrow_g.png" class="base ps-2 d-none">
+            <img src="assets/images/arrow_w.png" class="hover ps-2 d-none">
+          </a>
+        </div>
+      </div>
+    </a> -->
+  </div>
+</section>
